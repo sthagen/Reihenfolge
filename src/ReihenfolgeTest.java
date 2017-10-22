@@ -19,5 +19,9 @@ public class ReihenfolgeTest {
     public void testIsWellSorted() {
         assertFalse(r1.isWellSorted(new String[]{"A", "C", "B"}));
     }
+    @Test
+    public void testIsWellSorted2(){
+        assertFalse(r1.isWellSorted(new String[]{"B", "A", "C"}));
+    }
 
 }
