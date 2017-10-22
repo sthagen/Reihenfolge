@@ -2,10 +2,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class ReihenfolgeTest {
+    Reihenfolge r1;
 
     @Before
     public void setUp() {
-        Reihenfolge r1 = new Reihenfolge({{"A", "B"}, {"B", "C"}});
+        r1 = new Reihenfolge(new String[][]{{"A", "B"}, {"B", "C"}});
     }
 
     @Test
