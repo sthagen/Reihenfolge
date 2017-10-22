@@ -7,10 +7,26 @@ public class Reihenfolge {
     }
 
     public boolean isWellSorted(String[] forderung) {
-        if(forderung[2].equals("C")) {
-            return true;
-        } else {
-            return false;
+        String vergl;
+
+        for(int i = 0; i<forderung.length; ++i) {
+            for(int r = 0; r<reihe.length; ++r) {
+                if(reihe[r][0].equals(forderung[i])) {
+                    vergl = reihe[r][1];
+
+                    for(int z = i+1; z<forderung.length; ++z) {
+                        if(forderung[z].equals(vergl)) {
+                            break;
+                        }
+                    }
+
+                    return false;
+                }
+
+
+            }
         }
+
+        return true;
     }
 }
