@@ -7,6 +7,10 @@ public class Reihenfolge {
     }
 
     public boolean isWellSorted(String[] forderung) {
-        return true;
+        if(forderung[2].equals("C")) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
