@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.*;
+
 public class ReihenfolgeTest {
     Reihenfolge r1;
 
@@ -11,7 +13,7 @@ public class ReihenfolgeTest {
 
     @Test
     public void testMalEinfachSo() {
-        assertTrue(r1.isWellSorted(new String[][]{{"A", "B", "C"}}));
+        assertTrue(r1.isWellSorted(new String[]{"A", "B", "C"}));
     }
 
 }
