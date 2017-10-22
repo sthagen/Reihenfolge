@@ -11,7 +11,7 @@ public class ReihenfolgeTest {
 
     @Test
     public void testMalEinfachSo() {
-
+        assertTrue(r1.isWellSorted(new String[][]{{"A", "B", "C"}}));
     }
 
 }
